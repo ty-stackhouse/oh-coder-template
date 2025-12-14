@@ -27,6 +27,7 @@ jobs:
       LLM_MODEL: ${{ vars.LLM_MODEL || 'openrouter/openai/gpt-4o-mini' }}
       target_branch: ${{ vars.TARGET_BRANCH || 'main' }}
       runner: ${{ vars.TARGET_RUNNER }}
+      auto_merge: true
     secrets:
       PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
       PAT_USERNAME: ${{ secrets.PAT_USERNAME }}
